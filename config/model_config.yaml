@@ -1,0 +1,22 @@
+data:
+  n_records: 5000
+  anomaly_ratio: 0.06
+  random_state: 42
+
+model:
+  contamination: 0.05
+  n_estimators: 200
+  random_state: 42
+  max_samples: auto
+
+thresholds:
+  high_risk_score: 0.70
+  critical_risk_score: 0.85
+  queue_limit: 25
+
+feature_columns:
+  - Amount
+  - Posting_Hour
+  - Account_Code
+  - User_ID
+  - Approval_Level
